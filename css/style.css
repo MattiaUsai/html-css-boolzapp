@@ -24,7 +24,7 @@ body{
     display: none;
 }
 /* DOVE SI VEDONO I MESSAGGI  */
-.message{
+.chat-area{
     background-color: brown;
     width: 100%;
     height: 100%;
@@ -38,7 +38,38 @@ body{
     height: 80%;
     width: 100%;
     background-color: aquamarine;
+    padding: 5%;
+    
 }
+
+.message-section .sent{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.message-section .received{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.message-section p{
+    margin: 20px 0;
+    width: 70% ;
+    padding: 10px;
+    border-radius: 10px;
+}
+.received p{
+    background-color: beige;
+}
+.sent p{
+    background-color: lightgreen;
+}
+
+
+
+
+
+
 .write-section{
     height: 10%;
     width: 100%;
@@ -50,4 +81,10 @@ body{
     height: 80%;
     margin: auto;
     border-radius: 10px;
+}
+
+.write-section .fa-solid{
+    margin: auto;
+    font-size: 30px;
+    display: none;
 }
