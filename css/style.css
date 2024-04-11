@@ -196,6 +196,23 @@ body{
     display: none;
 }
 
+/* MEDIA QUERY */
+@media only screen and (min-width: 480px){
+    .write-section .fa-solid{
+        display: block;
+        width: 15%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .chats{
+        display: block;
+    }
+    .write-section .fa-solid{
+        display: block;
+    }
+    
+}
 
 
 
