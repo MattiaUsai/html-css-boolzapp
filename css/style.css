@@ -202,6 +202,14 @@ body{
 .desktop{
     display: none;
 }
+.tablet-chats{
+    width: 10%;
+    
+    display: none;
+}
+.tab-chat{
+    margin: 20px 0px;
+}
 
 
 
@@ -215,6 +223,12 @@ body{
     .tablet{
         display: flex;
     }
+    .tablet-chats{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media only screen and (min-width: 768px) {
     .chats{
@@ -226,6 +240,11 @@ body{
     .desktop{
         display: flex;
     }
+    .tablet-chats{
+        
+        display: none;
+    }
+
 }
 
 
