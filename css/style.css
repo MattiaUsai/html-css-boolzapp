@@ -196,12 +196,24 @@ body{
     display: none;
 }
 
+.tablet{
+    display: none;
+}
+.desktop{
+    display: none;
+}
+
+
+
 /* MEDIA QUERY */
 @media only screen and (min-width: 480px){
     .write-section .fa-solid{
         display: block;
         width: 15%;
         text-align: center;
+    }
+    .tablet{
+        display: flex;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -211,7 +223,9 @@ body{
     .write-section .fa-solid{
         display: block;
     }
-    
+    .desktop{
+        display: flex;
+    }
 }
 
 
