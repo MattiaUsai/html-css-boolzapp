@@ -6,6 +6,7 @@
 body{
     display: flex;
     height: 100vh;
+    background: -webkit-linear-gradient(90deg, lightgray 80%, green 20%);
    
 }
 /* CLASSI DI LAYOUT */
@@ -42,21 +43,21 @@ body{
 /* STABILISCE LA GRANDEZZA DELLA WEB-APP  */
 .container{
     margin: auto;
-    background-color: aqua;
-    height: 90vh;
-    width: 90vw;
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
     display: flex;
 }
 /* DOVE SI VEDONO LE CHATS IN ORDINE  */
 .chats{
-    background-color: blueviolet;
+    
     width:40% ;
     height: 100%;
-   /* display: none;*/
+    display: none;
 }
 /* DOVE SI VEDONO I MESSAGGI  */
 .chat-area{
-    background-color: brown;
+   
     width: 100%; 
     height: 100%;
 }
@@ -71,7 +72,7 @@ body{
 }
 .round-img{
     width: 50px;
-    height: 50px;
+    height:50px;
     background-image: url(../img/avatar_1.jpg);
     background-position: center;
     background-size: cover;
@@ -93,7 +94,9 @@ body{
 .alerts{
     display: flex;
     background-color: lightblue;
-    padding: 20px 0px;
+    height: 10%;
+    display: flex;
+    align-items: center;
     
 
 }
@@ -103,7 +106,42 @@ body{
 .alerts-info{
     text-decoration: underline;
 }
-
+.fa-magnifying-glass{
+    background-color: white;
+}
+.search{
+    height: 7%;
+    width: 100%;
+    background-color: lightgrey;
+    display: flex;
+    padding: 5 10px;
+    
+}
+.search-text {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    border: none;
+}
+.search-cont{
+    height: 80%;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+}
+.fa-magnifying-glass{
+    height: 100%;
+    margin: auto;
+}
+.contacts{
+    overflow: auto;
+    height: 70%;
+}
+.contact{
+    border-bottom: 1px solid gray ;
+    padding: 10px;
+}
 
 
 
@@ -114,7 +152,8 @@ body{
 .message-section{
     height: 80%;
     width: 100%;
-    background-color: aquamarine;
+    background-image: url(../img/mine.jpg);
+    background-repeat: repeat;
     padding: 5%;
     overflow:auto;
 }
@@ -156,3 +195,7 @@ body{
     font-size: 30px;
     display: none;
 }
+
+
+
+
