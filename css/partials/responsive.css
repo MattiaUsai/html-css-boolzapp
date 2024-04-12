@@ -1,8 +1,29 @@
+
+
+/* CLASSI PER RESPONSIVE */
+.tablet{
+    display: none;
+}
+.desktop{
+    display: none;
+}
+.tablet-chats{
+    width: 10%;
+    
+    display: none;
+}
+.tab-chat{
+    margin: 20px 0px;
+}
+
+
+
+
 @media  screen and (min-width: 480px){
-    .write-section .fa-solid{
-        display: block;
+    .write-section .emoji{
+        display: flex;
         width: 15%;
-        text-align: center;
+        
     }
     .tablet{
         display: flex;
@@ -14,13 +35,15 @@
         align-items: center;
     }
 }
+
+
 @media  screen and (min-width: 768px) {
     .chats{
         display: block;
     }
-    .write-section .fa-solid{
+    .write-section .emoji{
         display: flex;
-        margin: auto;
+        width: 15%;
     }
     .desktop{
         display: flex;
