@@ -1,3 +1,11 @@
+@import url(./partials/reset.css);
+@import url(./partials/color.css);
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -66,7 +74,7 @@ body{
 .profile-section{
     height: 10%;
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: var(--bar-color);
     display: flex;
     align-items: center;
 }
@@ -89,7 +97,7 @@ body{
 .fa-solid{
     margin: 0 10px;
     font-size: 30px;
-    color: lightgray;
+    color: var(--icons-color);
 }
 .alerts{
     display: flex;
@@ -112,7 +120,7 @@ body{
 .search{
     height: 7%;
     width: 100%;
-    background-color: lightgrey;
+    background-color: var(--bar-color);
     display: flex;
     padding: 5 10px;
     
@@ -139,7 +147,7 @@ body{
     height: 70%;
 }
 .contact{
-    border-bottom: 1px solid gray ;
+    border-bottom: 1px solid var(--icons-color) ;
     padding: 10px;
 }
 
@@ -166,10 +174,10 @@ body{
     border-radius: 10px;
 }
 .received p{
-    background-color: beige;
+    background-color: var(--ms-received);
 }
 .sent p{
-    background-color: lightgreen;
+    background-color: var(--ms-sent);
 }
 
 
@@ -180,19 +188,26 @@ body{
 .write-section{
     height: 10%;
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: var(--bar-color);
     display: flex;
 }
 .write-section input{
-    width: 95%;
-    height: 80%;
+    flex-grow: 1;
+    height: 60%;
     margin: auto;
     border-radius: 10px;
+    font-size: 17px;
 }
 
+
+
 .write-section .fa-solid{
-    margin: auto;
-    font-size: 30px;
+    
+    margin: auto;   
+}
+
+.emoji{
+    height: 100%;
     display: none;
 }
 
@@ -214,11 +229,11 @@ body{
 
 
 /* MEDIA QUERY */
-@media only screen and (min-width: 480px){
-    .write-section .fa-solid{
-        display: block;
-        width: 15%;
-        text-align: center;
+@media  screen and (min-width: 480px){
+    
+    .emoji{
+        display: flex;
+        width: 10%;
     }
     .tablet{
         display: flex;
@@ -230,12 +245,19 @@ body{
         align-items: center;
     }
 }
-@media only screen and (min-width: 768px) {
+@media  screen and (min-width: 768px) {
+    
+    .container{
+        height: 90vh;
+        width: 90vw;
+    }
+    
     .chats{
         display: block;
     }
-    .write-section .fa-solid{
-        display: block;
+    .emoji{
+        display: flex;
+        width: 10%;
     }
     .desktop{
         display: flex;
@@ -247,5 +269,5 @@ body{
 
 }
 
-
+@import url(./partials/responsive.css);
 

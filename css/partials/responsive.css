@@ -1,0 +1,34 @@
+@media  screen and (min-width: 480px){
+    .write-section .fa-solid{
+        display: block;
+        width: 15%;
+        text-align: center;
+    }
+    .tablet{
+        display: flex;
+    }
+    .tablet-chats{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media  screen and (min-width: 768px) {
+    .chats{
+        display: block;
+    }
+    .write-section .fa-solid{
+        display: flex;
+        margin: auto;
+    }
+    .desktop{
+        display: flex;
+    }
+    .tablet-chats{
+        
+        display: none;
+    }
+
+}
+
